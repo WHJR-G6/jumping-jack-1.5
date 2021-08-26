@@ -35,7 +35,8 @@ function draw() {
   player.velocityY = player.velocityY +0.8;
   player.collide(platform)
 
-  spawnPlatform()
+  spawnPlatform();
+  spawnStones();
   drawSprites();
 }
 
@@ -51,6 +52,23 @@ function spawnPlatform(){
 }
 
 
+function spawnStones(){
+
+	if(frameCount % 80 ===0){
+
+	var stone = createSprite(250,0,50,50);
+
+	stone.velocityY = 4;
+
+	stone.addImage(stone_image);
+
+	stone.scale = 0.6;
+
+	stone.x = random(0,500);
+
+}
+
+}
 
 
 
