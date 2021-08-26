@@ -37,14 +37,16 @@ function draw() {
 }
 
 function spawnPlatform(){
-
-      var platforms = createSprite(250,0,50,50);
-  platforms.velocityY = 4;
- 
+ if(frameCount % 40 ===0){
+    var platforms = createSprite(250,0,50,50);
+  platforms.velocityY = 5;
+  platforms.scale = 0.1;
+  platformGroups.add(platforms);
+  platforms.x = random(0,500);
+  platforms.lifetime = 120;
   }
 }
 
-// student activity
 
 
 
