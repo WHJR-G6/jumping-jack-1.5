@@ -2,6 +2,7 @@
 var player,player2;
 var platform,platform2;
 var player_image, platform_image;
+var platformGroups;
 
 function preload(){
   player_image=loadImage("images/jack2.png")
@@ -17,7 +18,9 @@ function setup() {
 
   platform = createSprite(250,350,100,10);
   platform.addImage("platform", platform_image)
-  platform.scale=0.15
+  platform.scale=0.15;
+  platformGroups = new Group(); 
+
   
 }
 
