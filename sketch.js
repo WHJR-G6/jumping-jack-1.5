@@ -19,7 +19,7 @@ function setup() {
   platform = createSprite(250,350,100,10);
   platform.addImage("platform", platform_image)
   platform.scale=0.15;
-  platformGroups = new Group(); 
+
 
   
 }
