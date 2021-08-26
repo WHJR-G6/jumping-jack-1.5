@@ -37,12 +37,10 @@ function draw() {
 }
 
 function spawnPlatform(){
-  if(frameCount % 60 ===0){
+
       var platforms = createSprite(250,0,50,50);
   platforms.velocityY = 4;
-  platforms.addImage(platform_image);
-  platforms.scale = 0.15;
-  platforms.x = random(0,500);
+ 
   }
 }
 
